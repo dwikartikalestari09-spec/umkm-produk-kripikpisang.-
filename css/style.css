@@ -1,1 +1,391 @@
+/* =========================
+   PENGATURAN DASAR
+========================= */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8e7;
+    color: #513a2b;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #e5a12d;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: clamp(26px, 5vw, 38px);
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: clamp(14px, 3vw, 19px);
+}
+
+/* =========================
+   NAVIGASI
+========================= */
+
+nav {
+    background-color: #75451f;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd879;
+}
+
+/* =========================
+   BERANDA
+========================= */
+
+.hero {
+    background-color: #f9e3ae;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero img {
+    width: 190px;
+    height: 190px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: clamp(23px, 4vw, 32px);
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: clamp(15px, 3vw, 19px);
+    margin-bottom: 28px;
+}
+
+.tombol {
+    display: inline-block;
+    background-color: #8b5429;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.tombol:hover {
+    background-color: #633719;
+}
+
+/* =========================
+   PRODUK
+========================= */
+
+.produk {
+    padding: 55px 20px;
+    text-align: center;
+    background-color: #fff8e7;
+}
+
+.produk h2,
+.tentang h2,
+.kontak h2 {
+    font-size: clamp(25px, 4vw, 32px);
+    margin-bottom: 30px;
+}
+
+.produk-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.produk-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    min-width: 0;
+}
+
+.produk-card:hover {
+    transform: translateY(-5px);
+}
+
+.produk-card img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.produk-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.produk-card p {
+    margin-bottom: 10px;
+}
+
+.harga {
+    color: #a86621;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* TOMBOL PESAN */
+
+.tombol-beli {
+    display: inline-block;
+    background-color: #75451f;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.tombol-beli:hover {
+    background-color: #a86621;
+}
+
+/* =========================
+   TENTANG KAMI
+========================= */
+
+.tentang {
+    background-color: #f9e3ae;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.tentang p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 17px;
+}
+
+/* =========================
+   KONTAK
+========================= */
+
+.kontak {
+    background-color: #fff8e7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.kontak > p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.kontak-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.kontak-card {
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    overflow-wrap: anywhere;
+}
+
+.ikon {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.kontak-card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.kontak-card p {
+    margin-bottom: 20px;
+}
+
+.tombol-kontak {
+    display: inline-block;
+    background-color: #75451f;
+    color: white;
+    text-decoration: none;
+    padding: 11px 17px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.tombol-kontak:hover {
+    background-color: #a86621;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #75451f;
+    color: white;
+    text-align: center;
+    padding: 22px 15px;
+}
+
+footer p + p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* =========================
+   WHATSAPP MELAYANG
+========================= */
+
+.whatsapp-float {
+    position: fixed;
+    right: 18px;
+    bottom: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #25d366;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+    .produk-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .produk-card img {
+        height: 210px;
+    }
+}
+
+/* =========================
+   HP
+========================= */
+
+@media (max-width: 600px) {
+    header {
+        padding: 25px 12px;
+    }
+
+    nav {
+        gap: 8px 15px;
+        padding: 13px 8px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .produk {
+        padding: 40px 15px;
+    }
+
+    .produk-container {
+        grid-template-columns: minmax(0, 1fr);
+        max-width: 380px;
+    }
+
+    .produk-card {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .produk-card img {
+        height: auto;
+        max-height: 300px;
+    }
+
+    .tentang,
+    .kontak {
+        padding: 45px 18px;
+    }
+
+    .tentang p,
+    .kontak > p {
+        font-size: 15px;
+    }
+
+    .kontak-container {
+        grid-template-columns: minmax(0, 1fr);
+        max-width: 380px;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        right: 14px;
+        bottom: 15px;
+    }
+}
